@@ -1,0 +1,8 @@
+Fonts used in this design;
+
+Font: Pt serif, 
+Author: Paratype, 
+Url: http://www.fontsquirrel.com/fonts/pt-serif;
+
+
+
