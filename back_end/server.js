@@ -17,8 +17,7 @@ function serveStaticFile(res, path, contentType, responseCode) {
 }
 
 http.createServer(function(req, res){
- // normalize url by removing querystring, optional
- // trailing slash, and making lowercase
+
  var path = req. url. replace(/\/?(?:\?.*)?$/, '' )
  . toLowerCase();
  switch(path) {
