@@ -11,6 +11,7 @@ jQuery(window).load(function() {
 
 $(document).ready(function(){
 
+
 //------------------------------------- Navigation setup ------------------------------------------------//
 
 
@@ -18,7 +19,7 @@ $(document).ready(function(){
 
 $("#mainNav ul a, .logo a, .ctl a, .skill a").click(function(e){
 
-	
+	var img_logo = $(".logo").find("#img_logo");
 	var full_url = this.href;
 	var parts = full_url.split("#");
 	var trgt = parts[1];
@@ -168,6 +169,9 @@ $(".factsContainer").parallax("300%", 0.3);
 $(".testiCliContainer").parallax("300%", 0.3);
 
 
+
+
+
 //--------------------------------- End parallax --------------------------------//
 
 
@@ -276,13 +280,21 @@ $('.factSlider').appear(function() {
 //--------------------------------- To the top  --------------------------------//
 
 $().UItoTop({ easingType: 'easeOutQuart' });
-
+ 
 //--------------------------------- End to the top --------------------------------//
-
+$("div .logo").on('mouseenter', function() {
+	$(".logo").css({height: '40%',width: '40%',marginTop:-20});
+	/* Act on the event */
+	// ajeitar orientação do texto
+	
+	
+});
+$("div .logo").on('mouseleave', function() {
+	$(".logo").css({height: '30%',width: '30%',marginTop:-10
+});
+	});
 
 });
-
-
 
 
 

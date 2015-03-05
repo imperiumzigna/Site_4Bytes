@@ -27,10 +27,10 @@
 #wrapper{
 	position:relative;
 	width:100%;
+
 }
 
 /*End wrapper*/
-
 
 /*Header*/
 
@@ -56,20 +56,25 @@ header{
 
 
 
-.logo{
-	 margin: 26px 0 20px 0;
+.logo_fig{
+	 margin: -10px 0px -20px 0;
+	 width: 30%;
+	 height: 30%;
 }
 
 
 .logo {
+    display: inline-block;
+    font-size: 14px;
+    position:relative;
+}
+.logo h1 {
     display: inline-block;
     font-size: 22px;
     text-transform: uppercase;
 	color:#111111;
 	position:relative;
 }
-
-
 
 
 .logo h1:after {
